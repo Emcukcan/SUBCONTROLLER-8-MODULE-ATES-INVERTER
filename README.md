@@ -70,10 +70,8 @@ Max Charge Current Algorithm
 
 MODBUS POLLING
 
+
 for (int i = 0; i < 10; i++) {
-
-
-
       MODBUSARRAY[i] = TerminalVoltageArray[i] * 10;
       MODBUSARRAY[i + 10] = TerminalCurrentArray[i] * 10;
       MODBUSARRAY[i + 20] = TerminalTempArray[i] * 10;
@@ -82,7 +80,6 @@ for (int i = 0; i < 10; i++) {
       MODBUSARRAY[i + 50] = TerminalSOCArray[i] * 10;
       MODBUSARRAY[i + 60] = ChargeStatusArray[i];
       MODBUSARRAY[i + 70] = DischargeStatusArray[i];
-
     }
 
     MODBUSARRAY[90] = Rack1ChargeRelay;
