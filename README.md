@@ -72,7 +72,7 @@ MODBUS POLLING
 
 
 
-  for (int i = 0; i < 10; i++) {
+   for (int i = 0; i < 10; i++) {
 
       MODBUSARRAY[i] = TerminalVoltageArray[i] * 10;
       MODBUSARRAY[i + 10] = TerminalCurrentArray[i] * 10;
