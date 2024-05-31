@@ -1,11 +1,10 @@
 Max Charge Current Algorithm
 
- if (String1Voltage < 420) {
+      if (String1Voltage < 420) {
         //set_totalvoltage(float totalvolt, float totalcurrent, float charge_maxcurr, float discharge_maxcurr ,0x180250F1);
         set_totalvoltage(String1Voltage , String1Current , MaxCurrent, MaxCurrent, 0x180250F1);
       }
-
-
+      
       else if (String1Voltage >= 420 && String1Voltage < 421 ) {
         //set_totalvoltage(float totalvolt, float totalcurrent, float charge_maxcurr, float discharge_maxcurr ,0x180250F1);
         set_totalvoltage(String1Voltage , String1Current , MaxCurrent * 0.9, MaxCurrent, 0x180250F1);
